@@ -1,0 +1,11 @@
+--- a/src/s_main.c	2018-04-04 09:43:28.000000000 -0600
++++ b/src/s_main-new.c	2018-05-17 18:13:42.151817411 -0600
+@@ -613,7 +613,7 @@
+ #else
+     strncpy(sbuf, sbuf2, MAXPDSTRING-30);
+     sbuf[MAXPDSTRING-30] = 0;
+-    strcat(sbuf, "/lib/pd");
++    strcat(sbuf, "/lib64/pd");
+     if (stat(sbuf, &statbuf) >= 0)
+     {
+             /* complicated layout: lib dir is the one we just stat-ed above */
