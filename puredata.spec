@@ -105,12 +105,7 @@ ln -sfv /usr/bin/pd %{buildroot}/%{_libdir}/pd/bin/pd
 
 %files devel
 %{_includedir}/m_pd.h
-%{_includedir}/pd/g_all_guis.h
-%{_includedir}/pd/g_canvas.h
-%{_includedir}/pd/m_imp.h
-%{_includedir}/pd/m_pd.h
-%{_includedir}/pd/s_stuff.h
-%{_includedir}/pd/x_vexp.h
+%{_includedir}/pd/
 %{_libdir}/pkgconfig/pd.pc
 %{_libdir}/pd/doc/6.externs/dspobj~.c
 %{_libdir}/pd/doc/6.externs/obj1.c
