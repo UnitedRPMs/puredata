@@ -116,7 +116,7 @@ ln -sfv /usr/bin/pd %{buildroot}/%{_libdir}/pd/bin/pd
 
 %changelog
 
-* Wed Aug 21 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.50.0-1  
+* Wed Aug 21 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.50.0-1  
 - Updated to 0.50.0
 
 * Wed Sep 26 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.49.0-1  
