@@ -1,9 +1,11 @@
-%global commit0 d8d637b6c53833c49c47c60ff78e3fbfd0d596c7
+%global commit0 d5766fd0600a5444a7e26754bed4f175d96ac568
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
+%define _legacy_common_support 1
+
 Name:          puredata
-Version:       0.50.2
+Version:       0.51.0
 Release:       1%{?dist}
 Summary:       A real-time graphical programming environment for media processing
 Group:         Applications/Multimedia
@@ -116,6 +118,9 @@ ln -sfv /usr/bin/pd %{buildroot}/%{_libdir}/pd/bin/pd
 
 %changelog
 
+* Thu Jun 11 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.51.0-1  
+- Updated to 0.51.0
+
 * Tue Oct 08 2019 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.50.2-1  
 - Updated to 0.50.2
 
@@ -136,4 +141,3 @@ ln -sfv /usr/bin/pd %{buildroot}/%{_libdir}/pd/bin/pd
 
 * Thu May 17 2018 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.48-1  
 - Initial build
-
