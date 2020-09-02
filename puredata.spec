@@ -43,7 +43,7 @@ puredata development header files and libraries.
 
 
 %prep
-%setup -n pure-data-%{commit0} 
+%setup -n pure-data-a540d836ea6afd29200e346a706d251dff4aa967
 %ifarch x86_64
 %patch -p1
 %endif
