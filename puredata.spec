@@ -1,11 +1,12 @@
-%global commit0 d9a7c8b1fd5cedd2220395d3ea982a4cc91bda58
+%global commit0 eeef4ba9130d3182146927c37fa57d61bbff0f0b
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global gver .git%{shortcommit0}
 
 %define _legacy_common_support 1
+%global _lto_cflags %{nil}
 
 Name:          puredata
-Version:       0.51.2
+Version:       0.51.4
 Release:       1%{?dist}
 Summary:       A real-time graphical programming environment for media processing
 Group:         Applications/Multimedia
@@ -16,6 +17,7 @@ Source1:       %{name}.png
 License:       BSD
 BuildRequires: autoconf
 BuildRequires: automake
+BuildRequires: gcc-c++
 BuildRequires: libtool
 BuildRequires: alsa-lib-devel
 BuildRequires: portaudio-devel
@@ -117,6 +119,9 @@ ln -sfv /usr/bin/pd %{buildroot}/%{_libdir}/pd/bin/pd
 %{_libdir}/pd/doc/6.externs/obj5.c
 
 %changelog
+
+* Mon Apr 26 2021 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.51.4-1  
+- Updated to 0.51.4
 
 * Thu Sep 24 2020 Unitedrpms Project <unitedrpms AT protonmail DOT com> 0.51.2-1  
 - Updated to 0.51.2
